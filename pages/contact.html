@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact me</title>
+        <title>Contact Form</title>
     </head>
     <main>
         <body>
             <section>
-                <header><h1>Contact me</h1></header>
+                <header>
+                    <h1>
+                        Contact Form                        
+                    </h1>
+                    <p>
+                        If you would like to contact me please fill in the form below.
+                    </p>
+                </header>
+            </section>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Contact details</legend>
+
+                        <label for="firstname">First name</label>
+                        <input id="firstname" type="text">
+                        <br>
+                        <label for="lastname">Last name</label>
+                        <input id="lastname" type="text">
+                        <br>
+                        <label for="email">email address</label>
+                        <input id="email" type="email">
+                   
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reason for contacting me</legend>
+
+                        <input type="radio" name="contactreason" value="learnmore" checked="checked">To learn more about the projects
+                        <br>
+                        <input type="radio" name="contactreason" value="collaboration">To collaborate on a project
+                        <br>
+                        <label for="other">Other, please specify</label>
+                        <br>
+                        <textarea id="other"></textarea>
+                        <br>                        
+                    </fieldset>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
             </section>
         </body>
     </main>
