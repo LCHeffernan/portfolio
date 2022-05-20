@@ -18,29 +18,92 @@
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a  href="./pages/projects.html" target="_blank">About</a></li>
-                        <li><a  href="./pages/contact.html" target="_blank">Projects</a></li>                                               
-                        <li><a  href="./pages/contact.html" target="_blank">Contact</a></li>                                               
+                        <li><a  href="#about" target="_blank">About</a></li>
+                        <li><a  href="#projects" target="_blank">Projects</a></li>                                               
+                        <li><a  href="#contact" target="_blank">Contact</a></li>                                               
                     </ul>
                 </nav>          
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                
                 <!-- <span class="background"> -->
-                    <img class="background" src="./images/laptopBackground.png" alt="">
+                <img class="background" src="./images/laptopBackground.png" alt="A Macbook laptop with HTML code on the screen.">
                 <!-- </span> -->
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                    
                 <main class="content">
-                    <p>Hi, I am a student at Manchester Codes. I have been learning CLI, git-hub, HTML, CSS and Javascript.</p>
+                    <div>
+                        <h2 id="about">About</h2>
+                        <p>
+                            Hi, I am a student at Manchester Codes. I have been learning CLI, git-hub, HTML, CSS and Javascript. I also have past experience with FORTRAN and C++.
+                            Ever since I started school I have loved maths. Throughout my education it has always been a strong focus of mine. I was first introduced to coding during my A-Level in computing, but it wasn't until university that I developed a passion for it.
+                            When I started coding at University in my undergraduate degree in maths I learnt how to program in FORTRAN.
+                            I wrote a program for my 4th year project to solve the Lorenz Equations. When I did my Masters in fluid dynamics I continued to write 
+                            in FORTRAN for many projects. For my dissertation I taught myself C++ and wrote a program to track diffusion across two different fluids. 
+                            I went on to become a maths teacher in secondary schools but I am now ready for a new challenge and want to become a software engineer. Manchester codes has 
+                            reignited my passion for coding.
+                        </p>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h2 id="projects">Projects</h2>
+                        <p>Projects
+                            I have done some projects over the last few weeks.                            
+                            <ul class="menu">
+                                <li>Project 1</li>
+                                <li>Project 2</li>                                               
+                                <li>Project 3</li> 
+                                <li>Project 4</li>
+                                <li>Project 5</li>                                                                                                
+                            </ul>
+                        </p>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h2 id="contact">Contact</h2>
+                        <p>
+                            If you would like to conatct me please fill in the following information.
+                        </p>
+                        <section>
+                            <form>
+                                <fieldset>
+                                    <legend>Contact details</legend>
+            
+                                    <label for="firstname">First name</label>
+                                    <input id="firstname" type="text">
+                                    <br>
+                                    <label for="lastname">Last name</label>
+                                    <input id="lastname" type="text">
+                                    <br>
+                                    <label for="email">email address</label>
+                                    <input id="email" type="email">
+                               
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Reason for contacting me</legend>
+            
+                                    <input type="radio" name="contactreason" value="learnmore" checked="checked">To learn more about the projects
+                                    <br>
+                                    <input type="radio" name="contactreason" value="collaboration">To collaborate on a project
+                                    <br>
+                                    <label for="other">Other, please specify</label>
+                                    <br>
+                                    <textarea id="other"></textarea>
+                                    <br>                        
+                                </fieldset>
+                                <input type="submit" name="submit" value="Submit">
+                            </form>
+                        </section>
+                    </div>
                 </main>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
                 <div class="social-media">
                     <ul class="sm-menu">
-                        <li><a data-anchor="social" href="https://www.twitter.com/Iisaheffernan"><i class='fa fa-twitter-square' style='font-size:24px'></i></a></li>
-                        <li><a data-anchor="social" href="https://www.linkedin.com/in/lisa-heffernan-54b61312a/"><i class='fa fa-linkedin-square' style='font-size:24px'></i></a></li>
+                        <li><a data-anchor="social" href="https://www.twitter.com/Iisaheffernan"><i class='fa fa-twitter-square'></i></a></li>
+                        <li><a data-anchor="social" href="https://www.linkedin.com/in/lisa-heffernan-54b61312a/"><i class='fa fa-linkedin-square'></i></a></li>
                     </ul>
                 </div>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
                 <footer class="footer">
-                    2022 Lisa Heffernan
+                    <span>2022 Lisa Heffernan</span>
+                    <span><a href="#top" data-anchor="innerlink">Top</a></span>
                 </footer>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
             </div>
