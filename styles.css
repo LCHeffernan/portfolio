@@ -14,6 +14,43 @@ body {
     box-sizing: border-box;  
   }
 
+.hexLeft{ 
+    float: left;
+    border-right: 2em solid blueviolet;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+ }
+
+.hexMiddle{
+    float: left;
+    width: 4em;
+    height: 2em;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 2em;
+    min-width:2em;
+    /* padding:1em; */
+}
+
+.hexRight{
+    float: left;
+    border-left: 2em solid blueviolet;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;  
+}
+
+.h2 li{
+    color:lightgray;
+}
+
+/* .menu li {
+    background-color:blueviolet;
+    padding: 0.5em;
+    margin:0.5em;
+    border: 0.2em solid lightgray;
+    min-width: 2em;
+    border-radius: 0.5rem;
+} */
 .layout{
     display:grid;
     /* padding-top:10px;
@@ -45,7 +82,7 @@ h1 {
     font-size: 2em;
     padding:0.5em;
     margin: 0%;;
-    border-bottom: 0.1em solid lightgray;
+    border-bottom: 0.05em solid blueviolet;
 }
 /* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
 .nav {
@@ -57,20 +94,15 @@ h1 {
     display:flex;
     flex-wrap:wrap;
     list-style: none;
-    padding: 0;
+    padding: 1em;
     margin: 0;
     justify-content:space-evenly;
     align-items: center;
     /* height: 100%; */
 }
 
-.menu li {
-    background-color:blueviolet;
-    padding: 0.5em;
-    margin:0.5em;
-    border: 0.2em solid lightgray;
-    min-width: 2em;
-    border-radius: 0.5rem;
+menu ul{
+    justify-content:center;
 }
 
 .menu a {
