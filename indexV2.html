@@ -5,7 +5,9 @@
         <link rel="stylesheet" type="text/css" href="styles.css">     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Hind:wght@500&family=Josefin+Sans:wght@500&family=Orbitron&family=Pacifico&family=Teko&display=swap" rel="stylesheet">
         <script src='https://kit.fontawesome.com/c42673ef74.js' crossorigin='anonymous'></script>
     </head>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                    
@@ -13,116 +15,105 @@
             <div class="layout">
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                
                 <header class="header">
-                    <h1 >Lisa Clare Heffernan</h1>
+                    <h1 >Lisa Heffernan</h1>
                 </header>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
                 <nav class="nav">
                     <ul class="menu">
                         <li><div class="hex"><a  href="#about" target="_blank">About</a></div></li>
-                        <!-- <li><div class="hexLeft"></div><div class="hexMiddle"><a  href="#about" target="_blank">About</a></div><div class="hexRight"></div></li> -->
                         <li><div class="hex"><a  href="#projects" target="_blank">Projects</a></div></li>                                               
                         <li><div class="hex"><a  href="#contact" target="_blank">Contact</a></div></li>                                               
                     </ul>
                 </nav>          
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                
-                <!-- <span class="background"> -->
                 <img class="background" src="./images/laptopBackground.png" alt="A Macbook laptop with HTML code on the screen.">
-                <!-- </span> -->
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->                    
+                <main class="about">
+                    <div class="content-about">
+                        <p>
+                            Hi, I am a student at Manchester Codes on the fast-track to engineering course.
+                        </p>
+                    </div> 
+                </main>
                 <main class="content">
-                    <div>
+                    <div class="content-about">
+                        <hr class="hr">
                         <h2 id="about">About</h2>
                         <p>
-                            Hi, I am a student at Manchester Codes. I have been learning CLI, git-hub, HTML, CSS and Javascript. I also have past experience with FORTRAN and C++.
-                            Ever since I started school I have loved maths. Throughout my education it has always been a strong focus of mine. I was first introduced to coding during my A-Level in computing, but it wasn't until university that I developed a passion for it.
+                            
+                            Ever since I started school I have loved maths. Throughout my education it has always been a strong focus of mine.
                             When I started coding at University in my undergraduate degree in maths I learnt how to program in FORTRAN.
-                            I wrote a program for my 4th year project to solve the Lorenz Equations. When I did my Masters in fluid dynamics I continued to write 
+                            When I did my Masters in fluid dynamics I continued to write 
                             in FORTRAN for many projects. For my dissertation I taught myself C++ and wrote a program to track diffusion across two different fluids. 
                             I went on to become a maths teacher in secondary schools but I am now ready for a new challenge and want to become a software engineer. Manchester codes has 
-                            reignited my passion for coding.
+                            reignited my passion for coding. So far I have been learning CLI, GitHub, HTML, CSS and Javascript.
                         </p>
-                    </div>
-                    <hr/>
-                    <div>
+                    </div> 
+                    <div class="content-projects">
+                        <hr/>
                         <h2 id="projects">Projects</h2>
-                        <p>Projects I have done some projects over the last few weeks.</p>
                         <div class="gallery-container">
                             <div class="gallery">
                                 <img src="./images/projectPic1.jpg">
-                                    <div class="desc">
-                                        Dummy project 1 random additional words 
-                                    </div>
+                                <div class="desc">
+                                    Dummy project 1 random additional words 
+                                </div>
                             </div>
                             <div class="gallery">
                                 <img src="./images/projectPic2.jpg">
-                                    <div class="desc">
-                                        Dummy project 2
-                                    </div>
+                                <div class="desc">
+                                    Dummy project 2
+                                </div>
                             </div>
                             <div class="gallery">
                                 <img src="./images/projectPic3.jpg">
-                                    <div class="desc">
-                                        Dummy project 3
-                                    </div>
+                                <div class="desc">
+                                    Dummy project 3
+                                </div>
                             </div>
                             <div class="gallery">
                                 <img src="./images/projectPic4.jpg">
-                                    <div class="desc">
-                                        Dummy project 4 more random words to test how things change with more content
-                                    </div>
+                                <div class="desc">
+                                    Dummy project 4 more random words to test how things change with more content
+                                </div>
                             </div>
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <h2 id="contact">Contact</h2>
-                        <p>
-                            If you would like to conatct me please fill in the following information.
-                        </p>
                         <section>
-                            <form>
+                            <form class="contact-form">
                                 <fieldset>
-                                    <legend>Contact details</legend>
-            
-                                    <label for="firstname">First name</label>
-                                    <input id="firstname" type="text">
+                                    <legend>Drop me a message</legend>
+                                    <input id="firstname" type="text" placeholder="first name">
                                     <br>
-                                    <label for="lastname">Last name</label>
-                                    <input id="lastname" type="text">
+                                    <input id="lastname" type="text" placeholder="last name">
                                     <br>
-                                    <label for="email">email address</label>
-                                    <input id="email" type="email">
-                               
+                                    <input id="email" type="email" placeholder="email">
+                                    <br>
+                                    <textarea id="message" placeholder="message"></textarea>
                                 </fieldset>
-                                <fieldset>
-                                    <legend>Reason for contacting me</legend>
-            
-                                    <input type="radio" name="contactreason" value="learnmore" checked="checked">To learn more about the projects
-                                    <br>
-                                    <input type="radio" name="contactreason" value="collaboration">To collaborate on a project
-                                    <br>
-                                    <label for="other">Other, please specify</label>
-                                    <br>
-                                    <textarea id="other"></textarea>
-                                    <br>                        
-                                </fieldset>
-                                <input type="submit" name="submit" value="Submit">
+                                <input class="submit" type="submit" name="submit" value="Submit">
                             </form>
                         </section>
                     </div>
                 </main>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
-                <div class="social-media">
-                    <ul class="sm-menu">
-                        <li><a data-anchor="social" href="https://www.twitter.com/Iisaheffernan"><i class='fa fa-twitter-square'></i></a></li>
-                        <li><a data-anchor="social" href="https://www.linkedin.com/in/lisa-heffernan-54b61312a/"><i class='fa fa-linkedin-square'></i></a></li>
-                    </ul>
+                <div class="bottom">
+                   <footer class="footer">
+                        <span>2022 Lisa Heffernan</span>   
+                    </footer>
+                    <div>
+                        <span><a href="#top" data-anchor="innerlink">Top</a></span>
+                    </div>
+                    <div class="social-media">
+                        <ul class="sm-menu">
+                            <li><a data-anchor="social" href="https://www.twitter.com/Iisaheffernan"><i class='fa fa-twitter-square'></i></a></li>
+                            <li><a data-anchor="social" href="https://www.linkedin.com/in/lisa-heffernan-54b61312a/"><i class='fa fa-linkedin-square'></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-<!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
-                <footer class="footer">
-                    <span>2022 Lisa Heffernan</span>
-                    <span><a href="#top" data-anchor="innerlink">Top</a></span>
-                </footer>
 <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
             </div>
         </body>
