@@ -2,11 +2,11 @@ html{
     font-size: 16px;
 }
 body {
-    margin:0;
+    margin: 0;
     font-family: 'Orbitron', sans-serif;
-    color:#3C3C3B;
+    color: #3C3C3B;
     min-width: 320px;
-    background-color:white;
+    background-color: white;
 }
 
 * {
@@ -14,7 +14,7 @@ body {
   }
 
 .layout{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto 2rem 4rem auto 2rem;
     grid-template-areas: 
@@ -24,13 +24,13 @@ body {
         "nav"
         "main"
         "footer" ;
-    min-height:100vh;
-}
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-.header, .nav, .footer, .social-media {
-    background-color:#9A9992;
+    min-height: 100vh;
 }
 
+.header, .nav, .footer, .social-media {
+    background-color: #9A9992;
+}
+/* HEADER */
 .header {
     grid-area: header;
     z-index: 1;
@@ -38,44 +38,40 @@ body {
 
 h1 {
     text-align: center;
-    color:#3C3C3B;
+    color: #3C3C3B;
     line-height: 4rem;
-    font-size: 2em;
-    padding:0.5em;
+    font-size: 2rem;
+    padding: 0.5rem;
     margin: 0%;;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* NAV BAR */
 .nav {
     grid-area: nav;
     border-bottom: 0.2rem solid blueviolet;
 }
 
 .menu {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 1em;
     margin: 0;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     
 }
 
-.menu ul{
-    justify-content:center;
-}
-
 .menu a {
     text-decoration: none;
-    color:lightgray;
+    color: lightgray;
     font-size: 0.6em;
 }
 
 .hex:before {
-    content: " ";
-    width: 0; 
-    height: 0;
     position: absolute;
+    content: "";
+    width: 0; 
+    height: 0;  
     left: -1.5em;
     border-right: 1.5em solid blueviolet;
     border-top: 1em solid transparent;
@@ -83,115 +79,110 @@ h1 {
 } 
 
 .hex {
-    margin-top: 30px;
+    position: relative;
     width: 3em;
     height: 2em;
+    margin-top: 30px;
     top: -0rem;
-    background-color: blueviolet;
-    position: relative;
+    background-color: blueviolet;    
     text-align: center;
     line-height: 2em;
-    min-width:2em;
+    min-width: 2em;
 }
 
 .hex:after {
+    position: absolute;
     content: "";
     width: 0;
-    height:0;
-    position: absolute;
+    height: 0; 
     right: -1.5em;
     border-left: 1.5em solid blueviolet;
     border-top: 1em solid transparent;
     border-bottom: 1em solid transparent; 
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* MAIN IMAGE */
 .background {
     grid-area: image;
-    padding:0px;
-    max-width: fit-content;
-    width:100vw;
-    padding:0px;
+    padding: 0;
+    width: 100vw;
+    max-width: fit-content;    
+    padding: 0;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-.hr {
+/* ABOUT */
+main{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.horizontal-rule {
     visibility: hidden;
 }
 
-.about{
+.introduction{
     grid-area: about;
-    display:flex;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
-    margin-left:20px;
-    margin-right:20px;
-    line-height:3rem;
+    margin: 0 2rem;
+    line-height: 3rem;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* PROJECTS */
 .content {
     grid-area: main; 
 }
 
-main{
-    background-color: white;
-    text-align: justify;
-    padding:1rem;
-}
-
 .gallery-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .gallery{  
-    padding:1rem;
-    margin:1rem;
-    border-style:solid;
-    border-color:#3C3C3B;
-    border-width:0.1rem;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-color: #3C3C3B;
+    border-width: 0.1rem;
     border-radius: 0.5rem;
     box-shadow: 5px 10px #9A9992;
 }
 
 .gallery img, .desc{ 
-    width:50vw;
+    width: 50vw;
     min-width: 30vw;
     max-height: 80vh;
 }
 
-.gallery:hover{
-    background-color: #3C3C3B;
-    color:lightgray;
-}
-
 .desc{
     text-align: center;
-    margin:auto;
+    margin: auto;
 }
-
-.gallery {
-    position: relative;
-  }
   
-.gallery > img {
+.gallery img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
   }
-  
-fieldset {
-    border-radius: 4px;
-}
 
+.gallery:hover{
+    background-color: #3C3C3B;
+    color: lightgray;
+}
+/* CONTACT */
 .contact-form {
     text-align: center;
-    margin:auto;
-    width:fit-content;
+    margin: auto;
+    width: fit-content;
+}
+
+fieldset {
+    border-radius: 4px;
 }
 
 .contact-form > fieldset input, #message{
@@ -200,14 +191,14 @@ fieldset {
 }
 
 input, #message{
-    padding:5px;
-    margin:5px;
-    border-width: 2px;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border-width: 0.1rem;
 }
 
 input:focus, #message:focus {
-    background-color:lightgray;
-    color:#3C3C3B;
+    background-color: lightgray;
+    color: #3C3C3B;
     outline-color: blueviolet;
 }
 
@@ -217,31 +208,31 @@ input:focus, #message:focus {
 }
 
 .submit:hover {
-    cursor:pointer;
+    cursor: pointer;
     background-color: blueviolet;
-    color:lightgray;
+    color: lightgray;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* FOOTER */
 .bottom {
     grid-area: footer;
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    background-color:#9A9992;
+    background-color: #9A9992;
     align-items: center;
-    height:2.5rem;
-    padding-left:1rem;
-    padding-right:1rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
+/* SOCIALS */
 .sm-menu {
-    display:flex;
-    list-style: none;
-    padding: 0%;
-    margin:0%;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .sm-menu li {
@@ -250,17 +241,17 @@ input:focus, #message:focus {
 }
 
 .sm-menu i {
-    font-size:2em;
+    font-size: 2em;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
 .bottom  a {
     text-decoration: none;
 }
-/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* MEDIA QUERIES */
 /* layout for tablet */
 @media screen and (min-width: 768px) {
     .layout{
-        display:grid;
+        display: grid;
         grid-template-columns: 40vw 1fr;
         grid-template-rows: 100px auto 3fr auto;
         grid-template-areas: 
@@ -284,37 +275,34 @@ input:focus, #message:focus {
     .hex {
         margin-top: 67px;
     }
-    .hr {
-        visibility:visible;
+    .horizontal-rule {
+        visibility: visible;
     }
-    .about{
-        margin-right:0px;
+    .introduction{
+        margin-right: 0px;
     }
-    #about + p{
-        margin-right:50px;
-        margin-left:50px;
-    }
-    #contact + p{
-        margin-right:50px;
-        margin-left:50px; 
+    #about + p, #contact + p{
+        margin-right: 3rem;
+        margin-left: 3rem;
     }
     .menu{
         justify-content: space-around;
-        padding-left:10px;
-        padding-right: 10px;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
     }
     .gallery img, .desc{ 
-        width:25vw;
+        width: 25vw;
         min-width: 20vw;
     }
     .gallery-container {
         justify-content: space-evenly;   
     }   
 }
+
 /* layout for laptop */
 @media screen and (min-width: 1200px) {
     .layout{
-        display:grid;
+        display: grid;
         grid-template-columns: 35vw 1fr 100px;
         grid-template-rows: 100px auto 3fr auto;
         grid-template-areas: 
@@ -323,26 +311,8 @@ input:focus, #message:focus {
             "main main main"
             "footer footer footer" ;
     }
-    .background {
-        max-width: 100%;
-    }
-    .header {
-        border-bottom: 0.2rem solid blueviolet;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        text-align: center;
-    }
-    .hex {
-        margin-top: 67px;
-    }
     .gallery img, .desc{ 
-        width:15vw;
+        width: 15vw;
         min-width: 15vw;
-    }
-    .gallery-container {
-        justify-content: space-evenly;   
     }
 }
