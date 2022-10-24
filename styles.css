@@ -212,10 +212,14 @@ input:focus,
 }
 
 .submit {
-    background-color: blueviolet;
-    color: lightgray;
+    background-color: blueviolet; 
     box-shadow: 3px 3px lightgray;
     border-radius: 3px;
+}
+
+.email {
+    text-decoration: none;
+    color: lightgray;
 }
 
 .submit:hover {
